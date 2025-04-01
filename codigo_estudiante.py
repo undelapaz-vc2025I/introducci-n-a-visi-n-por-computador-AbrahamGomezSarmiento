@@ -20,10 +20,13 @@ def leer_imagen(ruta_imagen):
     Retorna:
     img: objeto tipo Image de PIL
     """
-
-    img = Image.open(ruta_imagen)
+    # Abrir la imagen
+    img = Image.open(ruta_imagen) # Insertar código aquí
         
     return img
+
+img=leer_imagen("data/imagen0.png")
+img.show()
 
 def obtener_info_imagen(img):
     """
@@ -72,7 +75,7 @@ def estadisticas_intensidad(arreglo_img):
     """
     Calcula el promedio y la desviación estándar de las intensidades de los píxeles
     en una imagen representada como un arreglo de NumPy.
-
+    
     Parámetros:
     arreglo_img (np.ndarray): Imagen representada como arreglo de NumPy.
     
@@ -80,7 +83,7 @@ def estadisticas_intensidad(arreglo_img):
     tuple: (promedio, desviación_estándar) de las intensidades de los píxeles.
     """
     # Calcular el promedio y la desviación estándar
-    promedio = arreglo_img.mean()
+    promedio = arreglo_img.mean() # Insertar código aquí
     desviacion_estandar = arreglo_img.std() # Insertar código aquí
     
     return promedio, desviacion_estandar

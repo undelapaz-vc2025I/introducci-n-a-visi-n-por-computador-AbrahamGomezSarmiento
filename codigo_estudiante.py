@@ -21,9 +21,12 @@ def leer_imagen(ruta_imagen):
     img: objeto tipo Image de PIL
     """
     # Abrir la imagen
-    img = Image.open(ruta_imagen)
+    img = Image.open(ruta_imagen) # Insertar código aquí
         
     return img
+
+img=leer_imagen("data/imagen0.png")
+img.show()
 
 def obtener_info_imagen(img):
     """

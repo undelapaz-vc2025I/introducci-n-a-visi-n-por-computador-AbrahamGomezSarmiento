@@ -85,7 +85,6 @@ def estadisticas_intensidad(arreglo_img):
     # Calcular el promedio y la desviación estándar
     promedio = np.mean(arreglo_img)
     desviacion_estandar = np.std(arreglo_img)
-    
     return promedio, desviacion_estandar
 
 def estadisticas_por_canal(arreglo_img):
